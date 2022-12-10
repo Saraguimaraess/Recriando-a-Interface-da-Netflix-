@@ -1,0 +1,100 @@
+:root {
+    /*Para declarar a variável no css*/
+    --vermelho: #e50914;
+    --preto: #141414;
+    /*Usar as cores do site como variável, caso haja necessidade só precisa trocar em um lugar;*/
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*garantir que tudo esteja cabendo na "caixa"*/
+}
+/*Elementos base*/
+header .container {
+    display: flex;
+    flex-direction: row;
+    /*vem tudo pra linha, por norma o display flex fax isso*/
+    align-items: center;
+    justify-content: space-between; /*espaço entre h2 e nav*/
+}
+
+body {
+    background-color: var(--preto);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+header .container {
+    border: 1px solid black;
+}
+
+header .logo {
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: ´Arial Black´, ;
+    font-size: 40px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover {
+    color: #fff;
+} 
+
+/*Filme principal*/
+
+.filme-principal{
+    font-size: 16px;
+
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url("/images/zm0KiOrYCVjTP5V4lnJDdxs3eXy.jpg");
+    height:400px;
+    background-size: cover;
+    display: flex; /*O display flex joga para o padrão sempre em linha*/
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.filme-principal .container{
+    width: 40%;
+}
+.filme-principal .descricao{
+    margin-top: 15px;
+    margin-bottom: 40px;
+}
+.filme-principal .titulo{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+.botao i{
+    margin-right: 8px;
+}
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+.container{
+    margin-left: 20px;
+}
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
